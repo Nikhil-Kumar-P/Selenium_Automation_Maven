@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  firefox-tests:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - DISPLAY=:99
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
