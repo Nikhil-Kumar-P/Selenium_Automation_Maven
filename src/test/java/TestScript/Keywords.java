@@ -29,8 +29,8 @@ public class Keywords {
 	static Select select;
 
 	public void Openbrowser() throws Exception {
-		// System.setProperty("webdriver.gecko.driver",
-		// "/Users/nikhilkumar/Documents/Workspace/aut-lifafaend2end/geckodriver");
+		
+//		To Run the code on Local Machine
 
 //		FirefoxOptions options = new FirefoxOptions();
 //		options.setBinary("/Applications/Firefox.app/Contents/MacOS/firefox");
@@ -49,6 +49,8 @@ public class Keywords {
 //		prop = new Properties();
 //		prop.load(file);
 //	}
+		
+//		To Run the code on Docker
 
 		FirefoxOptions options = new FirefoxOptions();
 		options.setBinary("/usr/bin/firefox");
