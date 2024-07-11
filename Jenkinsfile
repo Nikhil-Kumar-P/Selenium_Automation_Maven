@@ -9,6 +9,11 @@ pipeline {
         DISPLAY = ':99' // For running Selenium tests with Xvfb
     }
     stages {
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
         stage('Build') {
             steps {
                 sh 'mvn clean install'
@@ -26,7 +31,7 @@ pipeline {
     post {
         always {
             // Cleanup actions, if necessary
-            sh 'killall Xvfb || true'
+            sh 'pkill Xvfb || true'
         }
         success {
             echo 'Build and tests were successful!'
