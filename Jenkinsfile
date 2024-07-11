@@ -1,37 +1,32 @@
 pipeline {
-    agent any // Use 'any' agent type to run directly on Jenkins server
-
+    agent {
+        docker {
+            image 'maven:3.8.1-openjdk-11'
+            args '-v /var/run/docker.sock:/var/run/docker.sock'
+        }
+    }
     environment {
         DISPLAY = ':99' // For running Selenium tests with Xvfb
     }
-
     stages {
-        stage('Checkout') {
-            steps {
-                // Replace this with your specific checkout command
-                // Example: git checkout or svn checkout
-                sh 'git checkout https://github.com/your/repository.git .'
-            }
-        }
         stage('Build') {
             steps {
-                sh 'mvn clean install' // Build the Maven project
+                sh 'mvn clean install'
             }
         }
         stage('Test') {
             steps {
                 // Start Xvfb for headless browser testing
                 sh 'Xvfb :99 -ac &'
-                // Run your Selenium tests or other tests
+                // Run your Selenium tests
                 sh 'mvn test'
             }
         }
     }
-
     post {
         always {
             // Cleanup actions, if necessary
-            sh 'pkill Xvfb || true' // Kill Xvfb process after tests
+            sh 'killall Xvfb || true'
         }
         success {
             echo 'Build and tests were successful!'
@@ -41,3 +36,4 @@ pipeline {
         }
     }
 }
+
