@@ -8,7 +8,9 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                checkout scm // Checkout the source code from your version control system
+                // Replace this with your specific checkout command
+                // Example: git checkout or svn checkout
+                sh 'git checkout https://github.com/your/repository.git .'
             }
         }
         stage('Build') {
