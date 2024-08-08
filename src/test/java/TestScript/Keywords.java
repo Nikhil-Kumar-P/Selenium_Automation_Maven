@@ -29,9 +29,9 @@ public class Keywords {
 	static Select select;
 
 	public void Openbrowser() throws Exception {
-		
-//		To Run the code on Local Machine
 
+//		To Run the code on Local Machine
+//
 //		FirefoxOptions options = new FirefoxOptions();
 //		options.setBinary("/Applications/Firefox.app/Contents/MacOS/firefox");
 //		options.addPreference("general.useragent.override",
@@ -45,11 +45,11 @@ public class Keywords {
 //																						// the device metrics
 //		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 //
-//		file = new FileInputStream("/Users/nikhilkumar/eclipse-workspace/automation.project/src/main/java/ObjectRepository/objectrepository.properties");
+//		file = new FileInputStream("src/main/java/ObjectRepository/objectrepository.properties");
 //		prop = new Properties();
 //		prop.load(file);
 //	}
-		
+
 //		To Run the code on Docker
 
 		FirefoxOptions options = new FirefoxOptions();

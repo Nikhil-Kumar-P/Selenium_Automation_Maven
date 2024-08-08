@@ -1,4 +1,5 @@
 # Use an official Maven image with OpenJDK 11
+#FROM ldr.lifafa.team:5000/maven-3.6.3-openjdk-11:base
 FROM maven:3.6.3-openjdk-11
 
 # Install Firefox and dependencies
@@ -19,11 +20,14 @@ ENV DISPLAY=:99
 WORKDIR /app
 
 # Copy the pom.xml file and the src directory to the container
-COPY pom.xml /app
-COPY src /app/src
+COPY ./ /app
 
 # Download the dependencies without running tests
 RUN mvn dependency:go-offline -B
 
-# Run Xvfb in the background and then run the tests
-ENTRYPOINT ["sh", "-c", "Xvfb :99 -ac & mvn test"]
+# Copy the entrypoint script to the container
+COPY entrypoint.sh /app/entrypoint.sh
+RUN chmod +x /app/entrypoint.sh
+
+# Set the entrypoint
+ENTRYPOINT ["/app/entrypoint.sh"]
