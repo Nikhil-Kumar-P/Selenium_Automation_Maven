@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE project [
+        ]>
+
+<project name="Module_TestNG_Ant_Maven" default="usage" basedir=".">
+
+    <!-- ========== Initialize Properties =================================== -->
+    <property environment="env"/>
+    <property name="test.reportsDir" value="${basedir}/target/test-reports"/> <!-- Reports will be generated in Maven's target directory -->
+
+    <!-- Clean up previous build -->
+    <target name="clean">
+        <delete dir="${basedir}/target"/>
+    </target>
+
+    <!-- Compile the project -->
+    <target name="compile" depends="clean">
+        <echo message="Compiling with Maven..."/>
+        <exec executable="mvn">
+            <arg value="clean"/>
+            <arg value="compile"/>
+        </exec>
+    </target>
+
+    <!-- Run the TestNG tests -->
+    <target name="run-tests" depends="compile">
+        <echo message="Running TestNG tests with Maven..."/>
+        <exec executable="mvn">
+            <arg value="test"/>
+        </exec>
+    </target>
+
+    <!-- Generate the TestNG reports from the existing test results -->
+    <target name="generate-report" depends="run-tests">
+        <echo message="Generating TestNG report..."/>
+        <exec executable="mvn">
+            <arg value="surefire-report:report"/>
+        </exec>
+    </target>
+
+    <!-- Display usage information -->
+    <target name="usage">
+        <echo>
+            ant run will execute the tests and generate the report using Maven
+        </echo>
+    </target>
+
+</project>

@@ -1,0 +1,64 @@
+PPL Business Use Case
+
+- Login
+- User KYC
+- Company KYC
+- Gift Card Puchase
+- Cash Card Purchase
+- Vehicles Purchase
+- Single Denomination Order
+- Multiple Denomination Order
+- Dynamic Denomination order
+- Wallet Payment
+- PG Payment
+- Wallet + PG Payment
+- Capture Payment Success
+- View Gift Cards
+- View Cash Cards
+- View Products
+- Capture Orders
+- Logout
+
+
+Automation Flow:
+
+Login Flow 
+			- User logged in
+
+KYC	Flow
+            - Skips the User KYC
+			- Cash card purchase flow
+			- User is blocked, User KYC Pending
+			- Completes User KYC
+	
+			- Skips Company KYC
+		 	- Product purchase flow
+			- User is blocked, Company KYC Pending
+			- Completes Company KYC
+
+Redemption Flow
+
+			- Gift Card purchase flow
+			- Multiple Denomination Order
+			- Payment Method Wallet
+			- Capture Payment
+			- View Gift Cards
+			- Capture Order
+
+			- Cash card purchase flow
+			- Dynamic Denomination order
+			- Payment Method Net Banking
+			- Capture Payment
+			- View Gift Cards
+			- Capture Order
+
+			- Vehicle purchase flow
+			- Single Denomination order
+			- Payment Method Wallet + Net Banking
+			- Capture Payment
+			- View Gift Cards
+			- Capture Order
+
+Logout Flow
+			- Logout
+			- Close the browser

@@ -1,0 +1,367 @@
+2025-04-10 18:51:26 INFO  TestScript.ExecuteTest - Starting the lead test
+2025-04-10 18:51:27 INFO  TestScript.ExecuteTest - Processing sheet: JKNS
+2025-04-10 18:51:28 WARN  TestScript.ExecuteTest - Unknown cell type
+2025-04-10 18:51:28 INFO  TestScript.ExecuteTest - Processing keyword: description, data: keyword, objectname: data, runmode: objectname
+2025-04-10 18:51:28 INFO  TestScript.ExecuteTest - Processing keyword: keyword, data: data, objectname: objectname, runmode: runmode
+2025-04-10 18:51:28 INFO  TestScript.ExecuteTest - Processing keyword: data, data: objectname, objectname: runmode, runmode: Launch the browser
+2025-04-10 18:51:28 INFO  TestScript.ExecuteTest - Processing keyword: objectname, data: runmode, objectname: Launch the browser, runmode: Openbrowser
+2025-04-10 18:51:28 INFO  TestScript.ExecuteTest - Processing keyword: runmode, data: Launch the browser, objectname: Openbrowser, runmode: no value
+2025-04-10 18:51:28 INFO  TestScript.ExecuteTest - Processing keyword: Launch the browser, data: Openbrowser, objectname: no value, runmode: no value
+2025-04-10 18:51:28 INFO  TestScript.ExecuteTest - Processing keyword: Openbrowser, data: no value, objectname: no value, runmode: yes
+2025-04-10 18:51:28 INFO  TestScript.ExecuteTest - Executing Openbrowser
+2025-04-10 18:51:28 INFO  TestScript.Keywords - Initializing Firefox options
+2025-04-10 18:51:28 INFO  TestScript.Keywords - Running on local machine
+2025-04-10 18:52:00 ERROR TestScript.ExecuteTest - Error executing keyword: Openbrowser, attempt: 1
+org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Process unexpectedly closed with status 0 
+Host info: host: 'Nikhils-MacBook-Air.local', ip: 'fe80:0:0:0:1097:65c5:9503:a0b4%en0'
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.3.2', java.version: '1.8.0_422'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {args: [], binary: /Applications/Firefox.app/C..., prefs: {general.useragent.override: Mozilla/5.0 (iPhone; CPU iP..., network.cookie.cookieBehavior: 0, network.cookie.lifetimePolicy: 2, network.cookie.sameSite.none: true, network.cookie.secure: true, network.stricttransportsecurity.preloadlist: false, security.ssl.enable_ocsp_stapling: false}}}]}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140) ~[selenium-remote-driver-4.10.0.jar:?]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96) ~[selenium-remote-driver-4.10.0.jar:?]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68) ~[selenium-remote-driver-4.10.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163) ~[selenium-remote-driver-4.10.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196) ~[selenium-remote-driver-4.10.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171) ~[selenium-remote-driver-4.10.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531) ~[selenium-remote-driver-4.10.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:227) ~[selenium-remote-driver-4.10.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:154) ~[selenium-remote-driver-4.10.0.jar:?]
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:151) ~[selenium-firefox-driver-4.10.0.jar:?]
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:146) ~[selenium-firefox-driver-4.10.0.jar:?]
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:130) ~[selenium-firefox-driver-4.10.0.jar:?]
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125) ~[selenium-firefox-driver-4.10.0.jar:?]
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:110) ~[selenium-firefox-driver-4.10.0.jar:?]
+	at TestScript.Keywords.Openbrowser(Keywords.java:65) ~[test-classes/:?]
+	at TestScript.ExecuteTest.leadtest(ExecuteTest.java:150) [test-classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_422]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_422]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_422]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_422]
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124) [testng-6.14.3.jar:?]
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583) [testng-6.14.3.jar:?]
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719) [testng-6.14.3.jar:?]
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989) [testng-6.14.3.jar:?]
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125) [testng-6.14.3.jar:?]
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109) [testng-6.14.3.jar:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:648) [testng-6.14.3.jar:?]
+	at org.testng.TestRunner.run(TestRunner.java:505) [testng-6.14.3.jar:?]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455) [testng-6.14.3.jar:?]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450) [testng-6.14.3.jar:?]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415) [testng-6.14.3.jar:?]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364) [testng-6.14.3.jar:?]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-6.14.3.jar:?]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84) [testng-6.14.3.jar:?]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208) [testng-6.14.3.jar:?]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137) [testng-6.14.3.jar:?]
+	at org.testng.TestNG.runSuites(TestNG.java:1049) [testng-6.14.3.jar:?]
+	at org.testng.TestNG.run(TestNG.java:1017) [testng-6.14.3.jar:?]
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135) [surefire-testng-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193) [surefire-testng-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94) [surefire-testng-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146) [surefire-testng-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) [surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) [surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) [surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) [surefire-booter-2.22.2.jar:2.22.2]
+2025-04-10 18:52:00 INFO  TestScript.ExecuteTest - Executing Openbrowser
+2025-04-10 18:52:00 INFO  TestScript.Keywords - Initializing Firefox options
+2025-04-10 18:52:00 INFO  TestScript.Keywords - Running on local machine
+2025-04-10 18:52:30 ERROR TestScript.ExecuteTest - Error executing keyword: Openbrowser, attempt: 2
+org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Process unexpectedly closed with status 0 
+Host info: host: 'Nikhils-MacBook-Air.local', ip: 'fe80:0:0:0:1097:65c5:9503:a0b4%en0'
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.3.2', java.version: '1.8.0_422'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {args: [], binary: /Applications/Firefox.app/C..., prefs: {general.useragent.override: Mozilla/5.0 (iPhone; CPU iP..., network.cookie.cookieBehavior: 0, network.cookie.lifetimePolicy: 2, network.cookie.sameSite.none: true, network.cookie.secure: true, network.stricttransportsecurity.preloadlist: false, security.ssl.enable_ocsp_stapling: false}}}]}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140) ~[selenium-remote-driver-4.10.0.jar:?]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96) ~[selenium-remote-driver-4.10.0.jar:?]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68) ~[selenium-remote-driver-4.10.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163) ~[selenium-remote-driver-4.10.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196) ~[selenium-remote-driver-4.10.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171) ~[selenium-remote-driver-4.10.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531) ~[selenium-remote-driver-4.10.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:227) ~[selenium-remote-driver-4.10.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:154) ~[selenium-remote-driver-4.10.0.jar:?]
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:151) ~[selenium-firefox-driver-4.10.0.jar:?]
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:146) ~[selenium-firefox-driver-4.10.0.jar:?]
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:130) ~[selenium-firefox-driver-4.10.0.jar:?]
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125) ~[selenium-firefox-driver-4.10.0.jar:?]
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:110) ~[selenium-firefox-driver-4.10.0.jar:?]
+	at TestScript.Keywords.Openbrowser(Keywords.java:65) ~[test-classes/:?]
+	at TestScript.ExecuteTest.leadtest(ExecuteTest.java:150) [test-classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_422]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_422]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_422]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_422]
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124) [testng-6.14.3.jar:?]
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583) [testng-6.14.3.jar:?]
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719) [testng-6.14.3.jar:?]
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989) [testng-6.14.3.jar:?]
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125) [testng-6.14.3.jar:?]
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109) [testng-6.14.3.jar:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:648) [testng-6.14.3.jar:?]
+	at org.testng.TestRunner.run(TestRunner.java:505) [testng-6.14.3.jar:?]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455) [testng-6.14.3.jar:?]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450) [testng-6.14.3.jar:?]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415) [testng-6.14.3.jar:?]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364) [testng-6.14.3.jar:?]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-6.14.3.jar:?]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84) [testng-6.14.3.jar:?]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208) [testng-6.14.3.jar:?]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137) [testng-6.14.3.jar:?]
+	at org.testng.TestNG.runSuites(TestNG.java:1049) [testng-6.14.3.jar:?]
+	at org.testng.TestNG.run(TestNG.java:1017) [testng-6.14.3.jar:?]
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135) [surefire-testng-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193) [surefire-testng-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94) [surefire-testng-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146) [surefire-testng-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) [surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) [surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) [surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) [surefire-booter-2.22.2.jar:2.22.2]
+2025-04-10 18:52:30 INFO  TestScript.ExecuteTest - Executing Openbrowser
+2025-04-10 18:52:30 INFO  TestScript.Keywords - Initializing Firefox options
+2025-04-10 18:52:30 INFO  TestScript.Keywords - Running on local machine
+2025-04-10 18:52:35 INFO  TestScript.Keywords - Browser launched with window size: 375x812
+2025-04-10 18:52:35 INFO  TestScript.Keywords - Object repository properties loaded
+2025-04-10 18:52:35 INFO  TestScript.ExecuteTest - Processing keyword: no value, data: no value, objectname: yes, runmode: Navigate to login page
+2025-04-10 18:52:35 INFO  TestScript.ExecuteTest - Processing keyword: no value, data: yes, objectname: Navigate to login page, runmode: navigate1
+2025-04-10 18:52:35 INFO  TestScript.ExecuteTest - Processing keyword: yes, data: Navigate to login page, objectname: navigate1, runmode: https://lifafa-team.webflow.io/jkns
+2025-04-10 18:52:35 INFO  TestScript.ExecuteTest - Processing keyword: Navigate to login page, data: navigate1, objectname: https://lifafa-team.webflow.io/jkns, runmode: no value
+2025-04-10 18:52:35 INFO  TestScript.ExecuteTest - Processing keyword: navigate1, data: https://lifafa-team.webflow.io/jkns, objectname: no value, runmode: yes
+2025-04-10 18:52:35 INFO  TestScript.ExecuteTest - Executing navigate1
+2025-04-10 18:52:35 INFO  TestScript.Keywords - Navigating to URL: https://lifafa-team.webflow.io/jkns
+2025-04-10 18:52:38 INFO  TestScript.Keywords - Current URL: https://lifafa-team.webflow.io/jkns
+2025-04-10 18:52:38 INFO  TestScript.ExecuteTest - Processing keyword: https://lifafa-team.webflow.io/jkns, data: no value, objectname: yes, runmode: Verify URL
+2025-04-10 18:52:38 INFO  TestScript.ExecuteTest - Processing keyword: no value, data: yes, objectname: Verify URL, runmode: verifyurl
+2025-04-10 18:52:38 INFO  TestScript.ExecuteTest - Processing keyword: yes, data: Verify URL, objectname: verifyurl, runmode: https://lifafa-team.webflow.io/jkns
+2025-04-10 18:52:38 INFO  TestScript.ExecuteTest - Processing keyword: Verify URL, data: verifyurl, objectname: https://lifafa-team.webflow.io/jkns, runmode: no value
+2025-04-10 18:52:38 INFO  TestScript.ExecuteTest - Processing keyword: verifyurl, data: https://lifafa-team.webflow.io/jkns, objectname: no value, runmode: yes
+2025-04-10 18:52:38 INFO  TestScript.ExecuteTest - Verifying URL
+2025-04-10 18:52:38 INFO  TestScript.Keywords - Verifying page URL
+2025-04-10 18:52:38 INFO  TestScript.ExecuteTest - Processing keyword: https://lifafa-team.webflow.io/jkns, data: no value, objectname: yes, runmode: Switch to Iframe
+2025-04-10 18:52:38 INFO  TestScript.ExecuteTest - Processing keyword: no value, data: yes, objectname: Switch to Iframe, runmode: iframe
+2025-04-10 18:52:38 INFO  TestScript.ExecuteTest - Processing keyword: yes, data: Switch to Iframe, objectname: iframe, runmode: jknsLoginFrame
+2025-04-10 18:52:38 INFO  TestScript.ExecuteTest - Processing keyword: Switch to Iframe, data: iframe, objectname: jknsLoginFrame, runmode: no value
+2025-04-10 18:52:38 INFO  TestScript.ExecuteTest - Processing keyword: iframe, data: jknsLoginFrame, objectname: no value, runmode: yes
+2025-04-10 18:52:38 INFO  TestScript.ExecuteTest - Switching to iFrame
+2025-04-10 18:52:38 INFO  TestScript.Keywords - Switching to iFrame: jknsLoginFrame
+2025-04-10 18:52:38 INFO  TestScript.Keywords - Current URL: https://lifafa-team.webflow.io/jkns
+2025-04-10 18:52:38 INFO  TestScript.ExecuteTest - Processing keyword: jknsLoginFrame, data: no value, objectname: yes, runmode: Enter Phone Number
+2025-04-10 18:52:38 INFO  TestScript.ExecuteTest - Processing keyword: no value, data: yes, objectname: Enter Phone Number, runmode: input
+2025-04-10 18:52:38 INFO  TestScript.ExecuteTest - Processing keyword: yes, data: Enter Phone Number, objectname: input, runmode: 9876543210
+2025-04-10 18:52:38 INFO  TestScript.ExecuteTest - Processing keyword: Enter Phone Number, data: input, objectname: 9876543210, runmode: phonenumber
+2025-04-10 18:52:38 INFO  TestScript.ExecuteTest - Processing keyword: input, data: 9876543210, objectname: phonenumber, runmode: yes
+2025-04-10 18:52:38 INFO  TestScript.ExecuteTest - Executing input with data: 9876543210 and objectname: phonenumber
+2025-04-10 18:52:38 INFO  TestScript.Keywords - Inputting data into: phonenumber
+2025-04-10 18:52:40 INFO  TestScript.Keywords - Current URL: https://lifafa-team.webflow.io/jkns
+2025-04-10 18:52:40 INFO  TestScript.ExecuteTest - Processing keyword: 9876543210, data: phonenumber, objectname: yes, runmode: Click on Proceed
+2025-04-10 18:52:40 INFO  TestScript.ExecuteTest - Processing keyword: phonenumber, data: yes, objectname: Click on Proceed, runmode: click1
+2025-04-10 18:52:40 INFO  TestScript.ExecuteTest - Processing keyword: yes, data: Click on Proceed, objectname: click1, runmode: no value
+2025-04-10 18:52:40 INFO  TestScript.ExecuteTest - Processing keyword: Click on Proceed, data: click1, objectname: no value, runmode: proceed
+2025-04-10 18:52:40 INFO  TestScript.ExecuteTest - Processing keyword: click1, data: no value, objectname: proceed, runmode: yes
+2025-04-10 18:52:40 INFO  TestScript.ExecuteTest - Executing click1 on object: proceed
+2025-04-10 18:52:40 INFO  TestScript.Keywords - Clicking object: proceed
+2025-04-10 18:52:41 INFO  TestScript.Keywords - Current URL: https://lifafa-team.webflow.io/jkns
+2025-04-10 18:52:41 INFO  TestScript.ExecuteTest - Processing keyword: no value, data: proceed, objectname: yes, runmode: Enter OTP
+2025-04-10 18:52:41 INFO  TestScript.ExecuteTest - Processing keyword: proceed, data: yes, objectname: Enter OTP, runmode: input
+2025-04-10 18:52:41 INFO  TestScript.ExecuteTest - Processing keyword: yes, data: Enter OTP, objectname: input, runmode: 12345
+2025-04-10 18:52:41 INFO  TestScript.ExecuteTest - Processing keyword: Enter OTP, data: input, objectname: 12345, runmode: loginotpverification
+2025-04-10 18:52:41 INFO  TestScript.ExecuteTest - Processing keyword: input, data: 12345, objectname: loginotpverification, runmode: yes
+2025-04-10 18:52:41 INFO  TestScript.ExecuteTest - Executing input with data: 12345 and objectname: loginotpverification
+2025-04-10 18:52:41 INFO  TestScript.Keywords - Inputting data into: loginotpverification
+2025-04-10 18:52:42 INFO  TestScript.Keywords - Current URL: https://lifafa-team.webflow.io/jkns
+2025-04-10 18:52:42 INFO  TestScript.ExecuteTest - Processing keyword: 12345, data: loginotpverification, objectname: yes, runmode: Click on Home Button
+2025-04-10 18:52:42 INFO  TestScript.ExecuteTest - Processing keyword: loginotpverification, data: yes, objectname: Click on Home Button, runmode: navigate2
+2025-04-10 18:52:42 INFO  TestScript.ExecuteTest - Processing keyword: yes, data: Click on Home Button, objectname: navigate2, runmode: https://portal.lifafa.team/store/inbom240400012s04/home
+2025-04-10 18:52:42 INFO  TestScript.ExecuteTest - Processing keyword: Click on Home Button, data: navigate2, objectname: https://portal.lifafa.team/store/inbom240400012s04/home, runmode: no value
+2025-04-10 18:52:42 INFO  TestScript.ExecuteTest - Processing keyword: navigate2, data: https://portal.lifafa.team/store/inbom240400012s04/home, objectname: no value, runmode: yes
+2025-04-10 18:52:42 INFO  TestScript.ExecuteTest - Executing navigate2
+2025-04-10 18:52:42 INFO  TestScript.Keywords - Navigating to URL with delay: https://portal.lifafa.team/store/inbom240400012s04/home
+2025-04-10 18:52:50 INFO  TestScript.Keywords - Current URL: https://portal.lifafa.team/store/inbom240400012s04/home
+2025-04-10 18:52:50 INFO  TestScript.ExecuteTest - Processing keyword: https://portal.lifafa.team/store/inbom240400012s04/home, data: no value, objectname: yes, runmode: Click on PPC
+2025-04-10 18:52:50 INFO  TestScript.ExecuteTest - Processing keyword: no value, data: yes, objectname: Click on PPC, runmode: scroll2
+2025-04-10 18:52:50 INFO  TestScript.ExecuteTest - Processing keyword: yes, data: Click on PPC, objectname: scroll2, runmode: no value
+2025-04-10 18:52:50 INFO  TestScript.ExecuteTest - Processing keyword: Click on PPC, data: scroll2, objectname: no value, runmode: ppcviewall
+2025-04-10 18:52:50 INFO  TestScript.ExecuteTest - Processing keyword: scroll2, data: no value, objectname: ppcviewall, runmode: yes
+2025-04-10 18:52:50 INFO  TestScript.ExecuteTest - Executing scroll2
+2025-04-10 18:52:50 INFO  TestScript.Keywords - Scrolling to object: ppcviewall
+2025-04-10 18:52:55 INFO  TestScript.Keywords - Current URL: https://portal.lifafa.team/store/inbom240400012s04/home
+2025-04-10 18:52:55 INFO  TestScript.ExecuteTest - Processing keyword: no value, data: ppcviewall, objectname: yes, runmode: Click on Virtual Yes Bank
+2025-04-10 18:52:55 INFO  TestScript.ExecuteTest - Processing keyword: ppcviewall, data: yes, objectname: Click on Virtual Yes Bank, runmode: click1
+2025-04-10 18:52:55 INFO  TestScript.ExecuteTest - Processing keyword: yes, data: Click on Virtual Yes Bank, objectname: click1, runmode: no value
+2025-04-10 18:52:55 INFO  TestScript.ExecuteTest - Processing keyword: Click on Virtual Yes Bank, data: click1, objectname: no value, runmode: virtualyesbankppc
+2025-04-10 18:52:55 INFO  TestScript.ExecuteTest - Processing keyword: click1, data: no value, objectname: virtualyesbankppc, runmode: yes
+2025-04-10 18:52:55 INFO  TestScript.ExecuteTest - Executing click1 on object: virtualyesbankppc
+2025-04-10 18:52:55 INFO  TestScript.Keywords - Clicking object: virtualyesbankppc
+2025-04-10 18:53:09 ERROR TestScript.ExecuteTest - Error executing keyword: click1, attempt: 1
+org.openqa.selenium.NoSuchWindowException: BrowsingContext does no longer exist
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.3.2', java.version: '1.8.0_422'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [2bf93e75-3c82-4070-b1b6-11bd7a90807e, findElement {using=xpath, value=//*[@id="giftCards"]/div/div/div/div[1]/div/a/table/tbody/tr/td[2]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 135.0, moz:accessibilityChecks: false, moz:buildID: 20250130195129, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 24.3.0, moz:processID: 94286, moz:profile: /var/folders/rn/rzjvphj11zn..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (iPhone; CPU iP...}
+Session ID: 2bf93e75-3c82-4070-b1b6-11bd7a90807e
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_422]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_422]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_422]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[?:1.8.0_422]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199) ~[selenium-remote-driver-4.10.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132) ~[selenium-remote-driver-4.10.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51) ~[selenium-remote-driver-4.10.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191) ~[selenium-remote-driver-4.10.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196) ~[selenium-remote-driver-4.10.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171) ~[selenium-remote-driver-4.10.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531) ~[selenium-remote-driver-4.10.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.10.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.10.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350) ~[selenium-remote-driver-4.10.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344) ~[selenium-remote-driver-4.10.0.jar:?]
+	at TestScript.Keywords.click1(Keywords.java:145) ~[test-classes/:?]
+	at TestScript.ExecuteTest.leadtest(ExecuteTest.java:206) [test-classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_422]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_422]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_422]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_422]
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124) [testng-6.14.3.jar:?]
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583) [testng-6.14.3.jar:?]
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719) [testng-6.14.3.jar:?]
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989) [testng-6.14.3.jar:?]
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125) [testng-6.14.3.jar:?]
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109) [testng-6.14.3.jar:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:648) [testng-6.14.3.jar:?]
+	at org.testng.TestRunner.run(TestRunner.java:505) [testng-6.14.3.jar:?]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455) [testng-6.14.3.jar:?]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450) [testng-6.14.3.jar:?]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415) [testng-6.14.3.jar:?]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364) [testng-6.14.3.jar:?]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-6.14.3.jar:?]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84) [testng-6.14.3.jar:?]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208) [testng-6.14.3.jar:?]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137) [testng-6.14.3.jar:?]
+	at org.testng.TestNG.runSuites(TestNG.java:1049) [testng-6.14.3.jar:?]
+	at org.testng.TestNG.run(TestNG.java:1017) [testng-6.14.3.jar:?]
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135) [surefire-testng-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193) [surefire-testng-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94) [surefire-testng-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146) [surefire-testng-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) [surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) [surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) [surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) [surefire-booter-2.22.2.jar:2.22.2]
+2025-04-10 18:53:09 INFO  TestScript.ExecuteTest - Executing click1 on object: virtualyesbankppc
+2025-04-10 18:53:09 INFO  TestScript.Keywords - Clicking object: virtualyesbankppc
+2025-04-10 18:53:10 ERROR TestScript.ExecuteTest - Error executing keyword: click1, attempt: 2
+org.openqa.selenium.NoSuchWindowException: Browsing context has been discarded
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.3.2', java.version: '1.8.0_422'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [2bf93e75-3c82-4070-b1b6-11bd7a90807e, findElement {using=xpath, value=//*[@id="giftCards"]/div/div/div/div[1]/div/a/table/tbody/tr/td[2]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 135.0, moz:accessibilityChecks: false, moz:buildID: 20250130195129, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 24.3.0, moz:processID: 94286, moz:profile: /var/folders/rn/rzjvphj11zn..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (iPhone; CPU iP...}
+Session ID: 2bf93e75-3c82-4070-b1b6-11bd7a90807e
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_422]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_422]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_422]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[?:1.8.0_422]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199) ~[selenium-remote-driver-4.10.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132) ~[selenium-remote-driver-4.10.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51) ~[selenium-remote-driver-4.10.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191) ~[selenium-remote-driver-4.10.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196) ~[selenium-remote-driver-4.10.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171) ~[selenium-remote-driver-4.10.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531) ~[selenium-remote-driver-4.10.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.10.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.10.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350) ~[selenium-remote-driver-4.10.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344) ~[selenium-remote-driver-4.10.0.jar:?]
+	at TestScript.Keywords.click1(Keywords.java:145) ~[test-classes/:?]
+	at TestScript.ExecuteTest.leadtest(ExecuteTest.java:206) [test-classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_422]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_422]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_422]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_422]
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124) [testng-6.14.3.jar:?]
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583) [testng-6.14.3.jar:?]
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719) [testng-6.14.3.jar:?]
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989) [testng-6.14.3.jar:?]
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125) [testng-6.14.3.jar:?]
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109) [testng-6.14.3.jar:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:648) [testng-6.14.3.jar:?]
+	at org.testng.TestRunner.run(TestRunner.java:505) [testng-6.14.3.jar:?]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455) [testng-6.14.3.jar:?]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450) [testng-6.14.3.jar:?]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415) [testng-6.14.3.jar:?]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364) [testng-6.14.3.jar:?]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-6.14.3.jar:?]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84) [testng-6.14.3.jar:?]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208) [testng-6.14.3.jar:?]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137) [testng-6.14.3.jar:?]
+	at org.testng.TestNG.runSuites(TestNG.java:1049) [testng-6.14.3.jar:?]
+	at org.testng.TestNG.run(TestNG.java:1017) [testng-6.14.3.jar:?]
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135) [surefire-testng-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193) [surefire-testng-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94) [surefire-testng-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146) [surefire-testng-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) [surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) [surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) [surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) [surefire-booter-2.22.2.jar:2.22.2]
+2025-04-10 18:53:10 INFO  TestScript.ExecuteTest - Executing click1 on object: virtualyesbankppc
+2025-04-10 18:53:10 INFO  TestScript.Keywords - Clicking object: virtualyesbankppc
+2025-04-10 18:53:11 ERROR TestScript.ExecuteTest - Error executing keyword: click1, attempt: 3
+org.openqa.selenium.NoSuchWindowException: Browsing context has been discarded
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.3.2', java.version: '1.8.0_422'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [2bf93e75-3c82-4070-b1b6-11bd7a90807e, findElement {using=xpath, value=//*[@id="giftCards"]/div/div/div/div[1]/div/a/table/tbody/tr/td[2]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 135.0, moz:accessibilityChecks: false, moz:buildID: 20250130195129, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 24.3.0, moz:processID: 94286, moz:profile: /var/folders/rn/rzjvphj11zn..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (iPhone; CPU iP...}
+Session ID: 2bf93e75-3c82-4070-b1b6-11bd7a90807e
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_422]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_422]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_422]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[?:1.8.0_422]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199) ~[selenium-remote-driver-4.10.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132) ~[selenium-remote-driver-4.10.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51) ~[selenium-remote-driver-4.10.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191) ~[selenium-remote-driver-4.10.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196) ~[selenium-remote-driver-4.10.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171) ~[selenium-remote-driver-4.10.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531) ~[selenium-remote-driver-4.10.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.10.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.10.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350) ~[selenium-remote-driver-4.10.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344) ~[selenium-remote-driver-4.10.0.jar:?]
+	at TestScript.Keywords.click1(Keywords.java:145) ~[test-classes/:?]
+	at TestScript.ExecuteTest.leadtest(ExecuteTest.java:206) [test-classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_422]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_422]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_422]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_422]
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124) [testng-6.14.3.jar:?]
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583) [testng-6.14.3.jar:?]
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719) [testng-6.14.3.jar:?]
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989) [testng-6.14.3.jar:?]
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125) [testng-6.14.3.jar:?]
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109) [testng-6.14.3.jar:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:648) [testng-6.14.3.jar:?]
+	at org.testng.TestRunner.run(TestRunner.java:505) [testng-6.14.3.jar:?]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455) [testng-6.14.3.jar:?]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450) [testng-6.14.3.jar:?]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415) [testng-6.14.3.jar:?]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364) [testng-6.14.3.jar:?]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-6.14.3.jar:?]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84) [testng-6.14.3.jar:?]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208) [testng-6.14.3.jar:?]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137) [testng-6.14.3.jar:?]
+	at org.testng.TestNG.runSuites(TestNG.java:1049) [testng-6.14.3.jar:?]
+	at org.testng.TestNG.run(TestNG.java:1017) [testng-6.14.3.jar:?]
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135) [surefire-testng-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193) [surefire-testng-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94) [surefire-testng-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146) [surefire-testng-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) [surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) [surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) [surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) [surefire-booter-2.22.2.jar:2.22.2]
+2025-04-10 18:53:11 ERROR TestScript.ExecuteTest - Test failed after 3 attempts

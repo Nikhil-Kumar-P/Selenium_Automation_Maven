@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 106.377 s <<< FAILURE! - in TestSuite
+leadtest(TestScript.ExecuteTest)  Time elapsed: 104.786 s  <<< FAILURE!
+java.lang.AssertionError: Stopping test due to multiple failures
+	at TestScript.ExecuteTest.leadtest(ExecuteTest.java:283)
+

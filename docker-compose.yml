@@ -1,13 +1,14 @@
 version: '3.8'
 
 services:
- aut-lifafaend2end:
+  automation-test:
     build:
       context: .
       dockerfile: Dockerfile
-    image: my-maven-project
+    image: my-maven-project:latest
     environment:
       - DISPLAY=:99
+      - IS_DOCKER=true
     volumes:
-      - /tmp/.X11-unix:/tmp/.X11-unix
-    command: sh -c "Xvfb :99 -ac & mvn test"
+      - .:/app
+    entrypoint: ["/app/entrypoint.sh"]

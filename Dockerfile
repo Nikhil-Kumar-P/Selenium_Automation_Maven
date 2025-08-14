@@ -1,6 +1,6 @@
 # Use an official Maven image with OpenJDK 11
-#FROM ldr.lifafa.team:5000/maven-3.6.3-openjdk-11:base
-FROM maven:3.6.3-openjdk-11
+FROM ldr.lifafa.team:5000/maven-3.6.3-openjdk-11:base
+#FROM maven:3.6.3-openjdk-11
 
 # Install Firefox and dependencies
 RUN apt-get update && \
@@ -15,6 +15,9 @@ RUN apt-get update && \
 
 # Set the DISPLAY environment variable for Xvfb
 ENV DISPLAY=:99
+
+# Define additional environment variables
+ENV IS_DOCKER=true
 
 # Set the working directory
 WORKDIR /app

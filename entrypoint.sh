@@ -4,4 +4,6 @@
 Xvfb :99 -ac &
 
 # Run the Maven tests
+mvn clean
 mvn test
+
